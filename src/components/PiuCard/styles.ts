@@ -83,9 +83,15 @@ export const User = styled.p`
 `;
 
 // Lixeira da direita
-export const DeleteButton = styled.img`
+export const DeleteImg = styled.img`
     width: 24px;
     height: 24px;
+`;
+
+export const DeleteButton = styled.button`
+    border: none;
+    background: transparent;
+    cursor: pointer;
 `;
 
 // Parte do meio do card, que contem o texto

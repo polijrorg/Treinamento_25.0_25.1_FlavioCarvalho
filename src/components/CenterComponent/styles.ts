@@ -86,6 +86,15 @@ export const GivePiu = styled.textarea`
     }
 `;
 
+export const GivePiuCount = styled.p`
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #ecedee;
+`;
+
 // Div de todos os icone de dentro do quero dar um pio
 export const GivePiuDivIcons = styled.div`
     display: flex;
