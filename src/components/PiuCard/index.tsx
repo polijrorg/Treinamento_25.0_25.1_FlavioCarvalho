@@ -2,6 +2,19 @@ import React, { useState } from 'react';
 import { CommentCard } from 'components/CommentCard';
 import * as S from './styles';
 
+export const comenters = [
+    {
+        name: 'Flavio',
+        image: '/cara_pessoa_1.png',
+        text: 'teste numero 1'
+    },
+    {
+        name: 'Flavio',
+        image: '/cara_pessoa_1.png',
+        text: 'teste numero 1'
+    }
+];
+
 interface Props {
     name: string;
     user: string;
@@ -21,20 +34,21 @@ export const PiuCard: React.FC<Props> = ({
     repius,
     comments,
     likes
-    // cardHeight = '251px'
 }) => {
     const [variavel, setVariavel] = useState('inicial');
 
     let commentSection = null;
 
     if (variavel === 'mudei') {
-        commentSection = (
+        commentSection = comenters.map((comenter, index) => (
             <CommentCard
-                name="Flavio"
-                image="/cara_pessoa_1.png"
-                text="teste numero 1"
+                // eslint-disable-next-line react/no-array-index-key
+                key={index}
+                name={comenter.name}
+                image={comenter.image}
+                text={comenter.text}
             />
-        );
+        ));
     }
 
     return (
@@ -83,6 +97,22 @@ export const PiuCard2: React.FC<Props> = ({
     comments,
     likes
 }) => {
+    const [variavel, setVariavel] = useState('inicial');
+
+    let commentSection = null;
+
+    if (variavel === 'mudei') {
+        commentSection = comenters.map((comenter, index) => (
+            <CommentCard
+                // eslint-disable-next-line react/no-array-index-key
+                key={index}
+                name={comenter.name}
+                image={comenter.image}
+                text={comenter.text}
+            />
+        ));
+    }
+
     return (
         <S.CardDiv>
             <S.CardTop>
@@ -103,7 +133,10 @@ export const PiuCard2: React.FC<Props> = ({
                     <S.InteractionNumber>{repius}</S.InteractionNumber>
                 </S.InteractionDiv>
                 <S.InteractionDiv>
-                    <S.InteractionImg src="/Chat_Circle_2.png" />
+                    <S.InteractionImg
+                        src="/Chat_Circle_2.png"
+                        onClick={() => setVariavel('mudei')}
+                    />
                     <S.InteractionNumber>{comments}</S.InteractionNumber>
                 </S.InteractionDiv>
                 <S.InteractionDiv>
@@ -111,6 +144,7 @@ export const PiuCard2: React.FC<Props> = ({
                     <S.InteractionNumber>{likes}</S.InteractionNumber>
                 </S.InteractionDiv>
             </S.CardBottom>
+            {commentSection}
         </S.CardDiv>
     );
 };

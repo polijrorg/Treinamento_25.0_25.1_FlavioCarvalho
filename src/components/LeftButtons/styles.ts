@@ -26,7 +26,7 @@ export const ItemButton = styled.button`
 // Texto dos botoes
 export const ItemText = styled.p`
     display: flex;
-    width: 179px;
+    //width: 179px;
     height: 57px;
     flex-direction: column;
     justify-content: center;

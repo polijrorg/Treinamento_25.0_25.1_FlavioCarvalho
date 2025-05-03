@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const RightDiv = styled.div`
     display: flex;
-    width: 336px;
+    width: 22vw;
+    height: 100vh;
     padding: 32px 16px;
     overflow: scroll;
     flex-direction: column;
@@ -36,4 +37,11 @@ export const TrendingDivision = styled.div`
     align-self: stretch;
     stroke-width: 1px;
     stroke: #4c5155;
+`;
+
+// Divisoria
+export const NewsDivision = styled.div`
+    width: 100%;
+    height: 0px;
+    border: 0.5px solid #4c5155;
 `;

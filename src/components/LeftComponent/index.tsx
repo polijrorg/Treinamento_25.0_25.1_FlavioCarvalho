@@ -13,8 +13,8 @@ export const LeftComponent: React.FC = () => {
                 <LeftButtons />
             </S.PiuButtons>
             <S.InferiorLeftLogos>
-                <S.LogOutButton src="quadrados1.png" />
-                <S.SquaresOne src="Log_Out.png" />
+                <S.ProfilePhoto src="quadrados1.png" />
+                <S.LogOutButton src="Log_Out.png" />
             </S.InferiorLeftLogos>
         </S.LeftDiv>
     );

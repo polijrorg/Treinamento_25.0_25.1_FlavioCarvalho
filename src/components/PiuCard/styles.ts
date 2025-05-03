@@ -3,7 +3,6 @@ import styled from 'styled-components';
 // Div principal do card
 export const CardDiv = styled.div`
     display: flex;
-    width: 720px;
     height: auto;
     padding: 24px;
     flex-direction: column;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NewsCardDiv = styled.div`
     display: flex;
-    width: 304px;
+    //width: 304px;
     height: 120px;
     align-items: center;
     gap: 8px;

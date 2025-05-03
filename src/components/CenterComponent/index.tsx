@@ -35,21 +35,23 @@ export const piuers = [
 export const CenterComponent: React.FC = () => {
     return (
         <S.DivFeed>
-            <S.HearPiu placeholder="Ouvir um pio...">
+            <S.HearPiuDiv>
+                <S.HearPiu placeholder="Ouvir um pio..." />
                 <S.HearPiuImg src="/ci_search.png" />
-            </S.HearPiu>
-            <S.GivePiu placeholder="Quero dar um pio...">
+            </S.HearPiuDiv>
+            <S.GivePiuDiv>
+                <S.GivePiu placeholder="Quero dar um pio..." />
                 <S.GivePiuDivIcons>
                     <S.GivePiuLeftIcons>
-                        <S.GivePiuIcon src="/Image_02.png" />
-                        <S.GivePiuIcon src="/Video.png" />
-                        <S.GivePiuIcon src="/Frame.png" />
-                        <S.GivePiuIcon src="/Tag.png" />
-                        <S.GivePiuIcon src="/Frame_Gif.png" />
+                        <S.GivePiuIcon src="/Image_02.svg" />
+                        <S.GivePiuIcon src="/Video.svg" />
+                        <S.GivePiuIcon src="/Emoji.svg" />
+                        <S.GivePiuIcon src="/Tag.svg" />
+                        <S.GivePiuIcon src="/Frame.svg" />
                     </S.GivePiuLeftIcons>
-                    <S.GivePiuIcon src="/Paper_Plane.png" />
+                    <S.GivePiuIcon src="/Paper_Plane.svg" />
                 </S.GivePiuDivIcons>
-            </S.GivePiu>
+            </S.GivePiuDiv>
             <S.Division />
             <PiuCard
                 name="Flavio"
@@ -61,7 +63,7 @@ export const CenterComponent: React.FC = () => {
                 likes={25}
             />
             {piuers.map((piuer, index) => (
-                <PiuCard
+                <PiuCard2
                     // eslint-disable-next-line react/no-array-index-key
                     key={index}
                     name={piuer.name}
@@ -73,15 +75,6 @@ export const CenterComponent: React.FC = () => {
                     likes={piuer.likes}
                 />
             ))}
-            <PiuCard2
-                name="Flavio"
-                user="@flaviocremaschi"
-                image="/cara_pessoa_1.png"
-                text="teste numero 1"
-                repius={3}
-                comments={1}
-                likes={15}
-            />
         </S.DivFeed>
     );
 };

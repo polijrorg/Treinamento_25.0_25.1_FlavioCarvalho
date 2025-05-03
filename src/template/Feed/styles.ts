@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
-    height: 1027px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    font-family: 'Poppins', sans-serif;
+    flex: 1 0 0;
 `;

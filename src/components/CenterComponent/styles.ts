@@ -3,17 +3,18 @@ import styled from 'styled-components';
 // Div principal de todo o componente do meio
 export const DivFeed = styled.div`
     display: flex;
-    width: auto;
+    width: 56vw;
+    height: 100vh;
     padding: 32px;
     flex-direction: column;
     align-items: center;
     gap: 46px;
     background: #151718;
-    overflow: scroll;
+    overflow-y: scroll;
 `;
 
-// Primeiro input para ouvir um piu
-export const HearPiu = styled.textarea`
+// Div do primeiro input
+export const HearPiuDiv = styled.div`
     display: flex;
     padding: 8px;
     justify-content: space-between;
@@ -22,9 +23,18 @@ export const HearPiu = styled.textarea`
     color: #ecedee;
     border-radius: 8px;
     background: #4c5155;
-    // Frase fantasma do input
+`;
+
+// Primeiro input para ouvir um piu
+export const HearPiu = styled.input`
+    color: #ecedee;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
     ::placeholder {
         color: #ecedee;
+        //background: transparent;
         //text-align: center;
         font-feature-settings: 'liga' off, 'clig' off;
         /* Body/Body Normal */
@@ -43,8 +53,8 @@ export const HearPiuImg = styled.img`
     height: 24px;
 `;
 
-// Segundo input de dar um pio
-export const GivePiu = styled.textarea`
+// Div do segundo input de dar um pio
+export const GivePiuDiv = styled.div`
     display: flex;
     padding: 24px;
     flex-direction: column;
@@ -54,7 +64,15 @@ export const GivePiu = styled.textarea`
     align-self: stretch;
     border-radius: 16px;
     background: #4c5155;
-    //Frase fantasma do input
+`;
+
+// Segundo input de dar um pio
+export const GivePiu = styled.textarea`
+    color: #ecedee;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
     ::placeholder {
         //width: 153px;
         color: #ecedee;
@@ -74,11 +92,11 @@ export const GivePiuDivIcons = styled.div`
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-    gap: 500px;
 `;
 
 // Div apenas dos icones da esquerda
 export const GivePiuLeftIcons = styled.div`
+    flex-direction: row;
     gap: 8px;
 `;
 
@@ -88,9 +106,9 @@ export const GivePiuIcon = styled.img`
     height: 24px;
 `;
 
+// Divisoria
 export const Division = styled.div`
+    width: 100%;
     height: 0px;
-    align-self: stretch;
-    stroke-width: 1px;
-    stroke: #4c5155;
+    border: 0.5px solid #4c5155;
 `;

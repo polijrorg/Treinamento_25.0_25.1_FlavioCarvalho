@@ -3,12 +3,12 @@ import styled from 'styled-components';
 // Div que organiza toda o Component da esquerda
 export const LeftDiv = styled.div`
     display: flex;
-    width: 320px;
-    height: 1024px;
+    width: 22vw;
+    height: 100vh;
     padding: 32px 0px;
     flex-direction: column;
     align-items: center;
-    gap: 240px;
+    //gap: 120px;
     flex-shrink: 0;
     border-right: 1px solid #4c5155;
     background: #1a1d1e;
@@ -57,7 +57,7 @@ export const InferiorLeftLogos = styled.div`
 `;
 
 // Botao quadrados 1
-export const SquaresOne = styled.img`
+export const ProfilePhoto = styled.img`
     width: 64px;
     height: 64px;
     flex: 1 0 0;

@@ -60,14 +60,18 @@ export const RightComponent: React.FC = () => {
                 <S.TrendingImg src="/fire.png" />
                 <S.TrendingText>Pius em alta</S.TrendingText>
             </S.TrendingDiv>
+            <S.NewsDivision />
             {news.map((nw, index) => (
-                <NewsCard
-                    // eslint-disable-next-line react/no-array-index-key
-                    key={index}
-                    imageNews={nw.imageNews}
-                    title={nw.title}
-                    description={nw.description}
-                />
+                <>
+                    <NewsCard
+                        // eslint-disable-next-line react/no-array-index-key
+                        key={index}
+                        imageNews={nw.imageNews}
+                        title={nw.title}
+                        description={nw.description}
+                    />
+                    <S.NewsDivision />
+                </>
             ))}
         </S.RightDiv>
     );
