@@ -51,6 +51,7 @@ export const HearPiu = styled.input`
 export const HearPiuImg = styled.img`
     width: 24px;
     height: 24px;
+    cursor: pointer;
 `;
 
 // Div do segundo input de dar um pio
@@ -86,6 +87,7 @@ export const GivePiu = styled.textarea`
     }
 `;
 
+// Contador de caracteres de dar um piu
 export const GivePiuCount = styled.p`
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -101,6 +103,7 @@ export const GivePiuDivIcons = styled.div`
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    cursor: pointer;
 `;
 
 // Div apenas dos icones da esquerda

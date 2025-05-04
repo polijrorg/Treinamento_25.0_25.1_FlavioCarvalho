@@ -4,62 +4,57 @@ import { Piu } from 'interfaces/piu';
 import * as S from './styles';
 
 export const CenterComponent: React.FC = () => {
+    // Lista inicial de pius que aparecerão ao abrir osite
     const [piuers, setPiuers] = useState([
         {
             name: 'Flavio',
             user: '@flaviocremaschi',
-            image: '/cara_pessoa_1.png',
+            image: '/quadrados1.png',
             text: 'teste numero 1',
             repius: 8,
-            comments: 20,
+            comments: 2,
             likes: 25
-        },
-        {
-            name: 'Flavio',
-            user: '@flaviocremaschi',
-            image: '/cara_pessoa_1.png',
-            text: 'teste numero 1',
-            repius: 8,
-            comments: 20,
-            likes: 25
-        },
-        {
-            name: 'Flavio',
-            user: '@flaviocremaschi',
-            image: '/cara_pessoa_1.png',
-            text: 'teste numero 1',
-            repius: 3,
-            comments: 1,
-            likes: 15
         },
         {
             name: 'Gilbert',
             user: '@gilconha',
             image: '/cara_pessoa_1.png',
-            text: 'testando um texto mais longoooooooooooooooooooooooooooooooooooooooo',
+            text: 'Maldito o homem que confia no homem...',
+            repius: 5,
+            comments: 2,
+            likes: 13
+        },
+        {
+            name: 'Gilbert',
+            user: '@gilconha',
+            image: '/cara_pessoa_2.jpg',
+            text: 'Os de verdade eu sei quem são',
             repius: 0,
             comments: 0,
             likes: 1
         }
     ]);
 
+    // Função que adiciona um novo piu na lista de pius
     function PostPiu(postText: string) {
         const newPiu = {
             name: 'Flavio',
             user: '@flaviocremaschi',
-            image: '/cara_pessoa_1.png',
+            image: '/quadrados1.png',
             text: postText,
-            repius: 8,
-            comments: 20,
-            likes: 25
+            repius: 0,
+            comments: 0,
+            likes: 0
         };
         setPiuers([newPiu, ...piuers]);
     }
 
+    // Função que deleta um piu da lista de pius
     function DeletePiu(PiuApagado: Piu) {
         setPiuers(piuers.filter((piu) => piu !== PiuApagado));
     }
 
+    // UseState para controlar o texto do input de dar piu
     const [text, setText] = useState('');
 
     return (
@@ -73,7 +68,7 @@ export const CenterComponent: React.FC = () => {
                     placeholder="Quero dar um pio..."
                     onChange={(event) => setText(event.target.value)}
                 />
-                <S.GivePiuCount>({text.length}) Palavras</S.GivePiuCount>
+                <S.GivePiuCount>({text.length}) Caracteres</S.GivePiuCount>
                 <S.GivePiuDivIcons>
                     <S.GivePiuLeftIcons>
                         <S.GivePiuIcon src="/Image_02.svg" />

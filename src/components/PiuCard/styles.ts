@@ -88,6 +88,7 @@ export const DeleteImg = styled.img`
     height: 24px;
 `;
 
+// Botao envolta do icone de deletar
 export const DeleteButton = styled.button`
     border: none;
     background: transparent;
@@ -123,6 +124,7 @@ export const InteractionDiv = styled.div`
 export const InteractionImg = styled.img`
     width: 24px;
     height: 24px;
+    cursor: pointer;
 `;
 
 // Numero do icone
@@ -136,6 +138,7 @@ export const InteractionNumber = styled.p`
     line-height: normal;
 `;
 
+// Barra de divisao entre os cards
 export const Division = styled.div`
     height: 0px;
     align-self: stretch;

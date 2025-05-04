@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// Props selected vai definir se o botao foi selecionado e mudar border e cor
 export interface StyledProps {
     selected: boolean;
 }

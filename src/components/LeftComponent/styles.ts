@@ -71,4 +71,5 @@ export const LogOutButton = styled.img`
     width: 64px;
     height: 64px;
     flex-shrink: 0;
+    cursor: pointer;
 `;

@@ -7,6 +7,7 @@ export const CommentDiv = styled.div`
     gap: 8px;
 `;
 
+// Div da imagem do usuario
 export const CommentImgDiv = styled.div`
     display: flex;
     padding: 2px;
@@ -16,6 +17,7 @@ export const CommentImgDiv = styled.div`
     border: 2px solid #004c97;
 `;
 
+// Imagem do usuario
 export const CommentImg = styled.img`
     width: 40px;
     height: 40px;
@@ -24,6 +26,7 @@ export const CommentImg = styled.img`
     border-radius: 48px;
 `;
 
+// Div que contem o text e usuario
 export const CommentTextDiv = styled.div`
     display: flex;
     flex-direction: column;
@@ -32,6 +35,7 @@ export const CommentTextDiv = styled.div`
     gap: 8px;
 `;
 
+// Nome do usuario
 export const CommentName = styled.p`
     color: #ecedee;
     text-align: center;
@@ -45,6 +49,7 @@ export const CommentName = styled.p`
     letter-spacing: 0.5px;
 `;
 
+// Usuario do usuario
 export const CommentDescription = styled.p`
     color: #ecedee;
     text-align: center;

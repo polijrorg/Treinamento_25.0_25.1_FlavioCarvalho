@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// Div principal do RightComponent
 export const RightDiv = styled.div`
     display: flex;
     width: 22vw;
@@ -13,15 +14,18 @@ export const RightDiv = styled.div`
     background: #1a1d1e;
 `;
 
+// Div do cabeçalho contendo o logo e o texto
 export const TrendingDiv = styled.div`
     display: flex;
 `;
 
+// Logo do cabeçalho
 export const TrendingImg = styled.img`
     width: 32px;
     height: 32px;
 `;
 
+// Texto do cabeçalho
 export const TrendingText = styled.p`
     color: #ecedee;
     /* Headline/Bold */
@@ -30,13 +34,6 @@ export const TrendingText = styled.p`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-`;
-
-export const TrendingDivision = styled.div`
-    height: 0px;
-    align-self: stretch;
-    stroke-width: 1px;
-    stroke: #4c5155;
 `;
 
 // Divisoria

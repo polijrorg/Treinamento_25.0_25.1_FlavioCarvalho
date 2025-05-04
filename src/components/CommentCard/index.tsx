@@ -6,7 +6,7 @@ interface CommentProps {
     image: string;
     text: string;
 }
-
+// Componente de comentário de um piu
 export const CommentCard: React.FC<CommentProps> = ({ name, image, text }) => {
     return (
         <S.CommentDiv>

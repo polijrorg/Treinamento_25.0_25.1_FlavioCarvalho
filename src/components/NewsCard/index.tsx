@@ -1,12 +1,14 @@
 import React from 'react';
 import * as S from './styles';
 
+// Props do componente de card de noticia
 interface PropsNews {
     imageNews: string;
     title: string;
     description: string;
 }
 
+// Componente de card de noticia
 export const NewsCard: React.FC<PropsNews> = ({
     imageNews,
     title,
